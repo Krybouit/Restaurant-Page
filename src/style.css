@@ -4,7 +4,9 @@
     margin: 0%;
 }
 
-
+:root {
+    --greyBackground: rgb(0, 0, 0, 0.9);
+}
 
 body {
     background-image: url("assets/images/main-background.jpg");
@@ -12,12 +14,20 @@ body {
     background-size: cover;
 }
 
-
 @font-face {
     font-family: "title-font";
     src: url(assets/fonts/italianno/Italianno-Regular.ttf);
 }
 
+@font-face {
+    font-family: "homepage-title";
+    src: url(assets/fonts/ostrich-sans/ostrich-sans/OstrichSans-Bold.otf);
+}
+
+@font-face {
+    font-family: "homepage-text";
+    src: url(assets/fonts/ostrich-sans/ostrich-sans/OstrichSansInline-Italic.otf);
+}
 
 header {
     display: flex;
@@ -25,16 +35,22 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: var(--greyBackground);
     border-bottom: 2px solid #a5a5a5;
 }
 
 h1 {
     font-family: title-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 15px;
-    font-size: 86px;
+    font-size: 5rem;
     font-weight: lighter;
     color: white;
+}
+
+h2 {
+    font-family: homepage-title, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    height: 110px;
 }
 
 nav {
@@ -42,11 +58,37 @@ nav {
     gap: 85px;
 }
 
-button {
+nav button {
     font-family: title-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: inherit;
     border: none;
     color: white;
-    font-size: 37px;
+    font-size: 2.3rem;
     cursor: pointer;
+}
+
+#content {
+    display: flex;
+    height: 600px;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: var(--greyBackground);
+    color: white;
+}
+
+#content p {
+    font-family: homepage-text, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+}
+
+#content button {
+    border: solid white;
+    padding: 14px;
+}
+
+#content button:hover {
+    border-color: yellow;
 }
