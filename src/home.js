@@ -1,5 +1,9 @@
 export const home = () => {
-    const homePage = document.getElementById("content")
+    const content = document.getElementById("content");
+    
+    const home = document.createElement("div");
+    home.setAttribute("id", "home");
+    content.appendChild(home);
 
     const homeTitle = document.createElement("h2");
     const homeText =  document.createElement("p");
@@ -7,9 +11,9 @@ export const home = () => {
     const reserveBtn = document.createElement("button");
     const takeoutBtn = document.createElement("button");
 
-    homePage.appendChild(homeTitle);
-    homePage.appendChild(homeText);
-    homePage.appendChild(nav);
+    home.appendChild(homeTitle);
+    home.appendChild(homeText);
+    home.appendChild(nav);
     nav.appendChild(reserveBtn);
     nav.appendChild(takeoutBtn);
 
