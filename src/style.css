@@ -25,9 +25,10 @@ body {
 }
 
 @font-face {
-    font-family: "homepage-text";
+    font-family: "homepage-font";
     src: url(assets/fonts/ostrich-sans/ostrich-sans/OstrichSansInline-Italic.otf);
 }
+
 
 header {
     display: flex;
@@ -83,7 +84,7 @@ nav button {
 }
 
 #home p {
-    font-family: homepage-text, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: homepage-font, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 30px;
 }
 
