@@ -1,8 +1,9 @@
 import './style.css';
 import './home.js';
 import './menu.js';
-import {home} from './home.js';
-import {menu} from './menu.js';
+/*import {home} from './home.js';
+import {menu} from './menu.js';*/
+import {about} from './about.js';
 
 (function tabSwitch() {
     const content = document.getElementById("content");
